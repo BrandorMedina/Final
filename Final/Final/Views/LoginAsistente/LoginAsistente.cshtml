@@ -1,0 +1,97 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <script>
+        function radio() {
+            var type = document.getElementsByName("radio");
+            if (type[0].checked) {
+                alert("Hi");
+            }
+            else if (type[1].checked) {
+                alert("Hi1");
+            }
+            else if (type[2].checked) {
+                alert("Hi2");
+            }
+        }
+    </script>
+    <h1>Iniciar Sesion </h1>
+    <div class="w3ls-login box box--big">
+        <!-- form starts here -->
+        <form action="../Doctors/Index" method="post">
+            <div class="agile-field-txt">
+                <label>
+                    <i class="fa fa-user" aria-hidden="true"></i> Usuario
+                </label>
+                <input type="text" name="name" placeholder="Introduce el usuario " required="" />
+            </div>
+            <div class="agile-field-txt">
+                <label>
+                    <i class="fa fa-envelope" aria-hidden="true"></i> Contraseña
+                </label>
+                <input type="password" name="password" placeholder="Introduce la contraseña " required="" id="myInput" />
+                <div class="agile_label">
+
+                    <input id="check3" name="check3" type="checkbox" value="show password" onclick="myFunction()">
+                    <label class="check" for="check3">Ver contraseña</label>
+                </div><br />
+                <div class="radio">
+                    <li><label><input type="radio" value="admin" name="select" onclick="radio();">  Administrador</label><br /></li><br />
+                    <li><label><input type="radio" value="admin" name="select">  Doctor</label><br /></li><br />
+                    <li><label><input type="radio" value="admin" name="select">  Asistente</label></li>
+                </div>
+            </div>
+
+
+            <!-- script for show password -->
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myInput");
+                    if (x.type === "password") {
+                        x.type = "text";
+                    } else {
+                        x.type = "password";
+                    }
+                }
+            </script>
+            <!-- //script ends here -->
+            <div class="w3ls-bot">
+                <div class="switch-agileits">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                        Guardar cuenta
+                    </label>
+                </div>
+                <div class="form-end">
+                    <input type="submit" value="LOGIN">
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </form>
+    </div>
+    <!-- //form ends here -->
+    <!--copyright-->
+    <div class="copy-wthree">
+        <p>
+            © 2018. All Rights Reserved | Design by BM
+
+        </p>
+    </div>
+    <!--//copyright-->
+
+</body>
+</html>
+
+

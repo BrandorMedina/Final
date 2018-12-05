@@ -231,7 +231,9 @@
     <Compile Include="Controllers\CitasController.cs" />
     <Compile Include="Controllers\ConsultasController.cs" />
     <Compile Include="Controllers\DoctorsController.cs" />
+    <Compile Include="Controllers\LoginAsistenteController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\LoginDoctorController.cs" />
     <Compile Include="Controllers\PacientesController.cs" />
     <Compile Include="Controllers\RecaudadoesController.cs" />
     <Compile Include="Controllers\RecetasController.cs" />
@@ -267,6 +269,8 @@
       <DependentUpon>BDModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\LoginAsistente.cs" />
+    <Compile Include="Models\LoginDoctor.cs" />
     <Compile Include="Models\Pacientes.cs">
       <DependentUpon>BDModel.tt</DependentUpon>
     </Compile>
@@ -289,6 +293,8 @@
     <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.0.0.min.map" />
     <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\LoginDoctor\LoginDoctor.cshtml" />
+    <Content Include="Views\LoginAsistente\LoginAsistente.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
