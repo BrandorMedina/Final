@@ -5,6 +5,66 @@
 }
 
 <h2>Index</h2>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - BM- RM</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <br />
+    <div class="jumbotron bg-dark text-light bg-success">
+        <h1 class="display-4 text-center">Doctor</h1>
+    </div>
+    <div class="card-group">
+        <div class="card bg-light">
+            <img class="card-img-top" src="~/images/vicitas.png" alt="Vicitas " />
+            <div class="card-body">
+                <h5 class="card-title text-center">@Html.ActionLink("Visitas", "Index", "Visitas")</h5>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <img class="card-img-top" src="~/images/consultas.png" alt="Consultas">
+            <div class="card-body">
+                <h5 class="card-title text-center">@Html.ActionLink("Consultas", "Index", "Consultas")</h5>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <img class="card-img-top" src="~/images/citas.png" alt="Citas">
+            <div class="card-body">
+                <h5 class="card-title text-center">@Html.ActionLink("Citas", "Index", "Citas")</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-group">
+        <div class="card bg-light">
+            <img class="card-img-top" src="~/images/recetas.png" alt="Recetas" />
+            <div class="card-body">
+                <h5 class="card-title text-center">@Html.ActionLink("Recetas", "Index", "Recetas")</h5>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <img class="card-img-top" src="~/images/pacientes.png" alt="Pacientes">
+            <div class="card-body">
+                <h5 class="card-title text-center">@Html.ActionLink("Pacientes", "Index", "Pacientes")</h5>
+            </div>
+        </div>
+        <div class="card bg-light">
+            <img class="card-img-top" src="~/images/citas.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title text-center">@Html.ActionLink("Citas", "Index", "Citas")</h5>
+            </div>
+        </div>
+    </div>
+    <br /><br />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
 
 <p>
     @Html.ActionLink("Create New", "Create")
