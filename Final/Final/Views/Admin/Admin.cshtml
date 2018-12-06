@@ -1,7 +1,6 @@
-﻿@model IEnumerable<Final.Models.Doctor>
-
+﻿@model IEnumerable<Final.Models.Admin>
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Admin";
 }
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -15,11 +14,11 @@
 </head>
 <body>
     <div class="" style="position:fixed; float:right">
-        @Html.ActionLink("Desconectar", "LoginAsistente", "LoginAsistente")
+        @Html.ActionLink("Desconectar", "LoginDoctor", "LoginDoctor")
     </div>
     <br />
     <div class="jumbotron bg-dark text-light bg-success">
-        <h1 class="display-4 text-center">Doctor</h1>
+        <h1 class="display-4 text-center">Administrador</h1>
     </div>
     <div class="card-group">
         <div class="card bg-light">
@@ -35,9 +34,9 @@
             </div>
         </div>
         <div class="card bg-light">
-            <img class="card-img-top" src="~/images/citas.png" alt="Citas">
+            <img class="card-img-top" src="~/images/doctor.png" alt="Doctor">
             <div class="card-body">
-                <h5 class="card-title text-center">@Html.ActionLink("Citas", "Index", "Citas")</h5>
+                <h5 class="card-title text-center">@Html.ActionLink("Doctor", "Create", "Doctors")</h5>
             </div>
         </div>
     </div>
@@ -67,3 +66,4 @@
     <script src="~/Scripts/bootstrap.min.js"></script>
 </body>
 </html>
+

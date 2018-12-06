@@ -227,6 +227,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\AsistentesController.cs" />
     <Compile Include="Controllers\CitasController.cs" />
     <Compile Include="Controllers\ConsultasController.cs" />
@@ -241,6 +242,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Asistentes.cs">
       <DependentUpon>BDModel.tt</DependentUpon>
     </Compile>
@@ -295,6 +297,7 @@
     <Content Include="Views\Login\Login.cshtml" />
     <Content Include="Views\LoginDoctor\LoginDoctor.cshtml" />
     <Content Include="Views\LoginAsistente\LoginAsistente.cshtml" />
+    <Content Include="Views\Admin\Admin.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
